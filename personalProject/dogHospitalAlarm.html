@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강아지는 귀여워</title>
+    <!-- 부트스트랩 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/9ba187d4f0.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hospitalAlarm.css">
+</head>
+
+<body>
+
+    <!-- 전체 컨테이너 시작 -->
+    <div class="container-fluid all-wrap">
+
+        <!-- 사이드 내비게이션 영역 시작 -->
+        <header id="header" class="header main-header boxShadow">
+            <h1 class="header-title">강아지는<br>귀여워</h1>
+            <!-- 사이드 내비 타이틀 -->
+            <ul class="gnb main-gnb">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">MENU</a></li>
+            </ul>
+            <!-- 사이드 내비 GNB -->
+            <button class="logout-btn">LOGOUT</button>
+        </header>
+        <!-- 사이드 내비게이션 영역 끝 -->
+
+
+        <!-- 컨텐츠 영역 시작 -->
+        <section class="main-visual">
+            <!-- 강아지 알람 페이지 시작! -->
+            <div class="boxShadow dog_hospital_alarm_page">
+                <div class="alarm_top_wrap">
+                    <h2 class="alrarm_title">병원 예약</h2>
+                    <div class="alarm_conts_wrap">
+
+                        <!-- 알림 컨텐츠 1 -->
+                            <div class="dog_alarm_conts">
+                                <div class="dog_alarm_icon">
+                                    <i class="fa-solid fa-bell"></i>
+                                </div>
+                                <ul class="dog_alarm_info">
+                                    <li class="dog_alarm_note">
+                                        광견병 예방 접종
+                                    </li>
+                                    <li class="dog_alarm_date">
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                        2023-06-25
+                                    </li>
+                                    <li class="dog_alarm_time">
+                                        <i class="fa-solid fa-clock"></i>
+                                        12:30
+                                    </li>
+                                    <li class="dog_alarm_place">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        동행동물병원
+                                    </li>
+                                </ul>
+                                <div class="dog_alarm_conts_btn">
+                                    <button type="button" class="dog_alarm_conts_edit">수정</button>
+                                    <button type="button" class="dog_alarm_conts_delete">삭제</button>
+                                </div>
+                            </div>
+                        <!-- 알림 컨텐츠 1 -->
+
+
+                    </div>
+                    <!-- 알람 리스트 -->
+                </div>
+                <!-- 상단 병원 예약 -->
+                <div class="dividline"></div>
+                <div class="alarm_bottom_wrap">
+                    <h2 class="alrarm_title">정기 예방접종</h2>
+                    <div class="alarm_conts_wrap">
+                        
+                        <!-- 알림 컨텐츠 1 -->
+                        <div class="dog_alarm_conts">
+                            <div class="dog_alarm_icon">
+                                <i class="fa-solid fa-bell"></i>
+                            </div>
+                            <ul class="dog_alarm_info">
+                                <li class="dog_alarm_note">
+                                    광견병 예방 접종
+                                </li>
+                                <li class="dog_alarm_date">
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                    2023-06-25
+                                </li>
+                                <li class="dog_alarm_time">
+                                    <i class="fa-solid fa-clock"></i>
+                                    12:30
+                                </li>
+                                <li class="dog_alarm_place">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    동행동물병원
+                                </li>
+                            </ul>
+                            <div class="dog_alarm_conts_btn">
+                                <button type="button" class="dog_alarm_conts_edit">수정</button>
+                                <button type="button" class="dog_alarm_conts_delete">삭제</button>
+                            </div>
+                        </div>
+                    <!-- 알림 컨텐츠 1 -->
+
+                    </div>
+                </div>
+                <!-- 더보기 버튼 -->
+                <button class="more_btn hospital_alarm_more_btn"><i class="fa-solid fa-plus"></i></button>
+            <!-- 페이지네이션 -->
+            <nav aria-label="Page navigation" class="pager">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- 페이지네이션 -->
+            </div>
+            <!-- 강아지 알람 페이지 끝! -->
+
+
+
+
+            <!-- 강아지 알람 추가하기 시작 -->
+            <div class="boxShadow dog_alarm_add_wrap">
+                <form action="">
+                    <h2 class="dog_alarm_add_title">새로운 알림 등록</h2>
+                <ul>
+                    <li>
+                        <h4>카테고리</h4>
+                        <ul class="alarm_add_category_btn">
+                            <li><button type="button"><i class="fa-solid fa-house-medical"></i></button></li>
+                            <li><button type="button"><i class="fa-solid fa-mortar-pestle"></i></button></li>
+                            <li><button type="button"><i class="fa-solid fa-syringe"></i></button></li>
+                            <li><button type="button"><i class="fa-solid fa-comment-medical"></i></button></li>
+                            <li><button type="button"><i class="fa-solid fa-bell"></i></button></li>
+                        </ul>
+                    </li>
+                    <!-- 카테고리 -->
+                    <li class="alarm_add_date_time">
+                        <div>
+                            <h4><label for="alarm_add_date">날짜</label></h4>
+                            <span><i class="fa-regular fa-calendar-days"></i>
+                            <input type="date" value="2023-06-08" id="alarm_add_date"></span>
+                        </div>
+                        <div>
+                            <h4><label for="alarm_add_time">시간</label></h4>
+                            <span><i class="fa-solid fa-clock"></i>
+                            <input type="time" value="00:00" id="alarm_add_time"></span>
+
+                        </div>
+                    </li>
+                    <!-- 날짜 시간 -->
+                    <li>
+                        <h4><label for="alarm_add_sick">질병</label></h4>
+                        <textarea placeholder="아픈 곳을 입력해주세요." name="" id="alarm_add_sick" cols="30" rows="5"></textarea>
+                    </li>
+                    <li>
+                        <h4><label for="alarm_add_place">장소</label></h4>
+                        <textarea placeholder="진료받으실 장소를 입력해주세요." name="" id="alarm_add_place" cols="30" rows="5"></textarea>
+                    </li>
+                </ul>
+                <div class="btn_group">
+                    <button type="button" class="btn_group_first">취소</button>
+                    <button type="button" class="btn_group_second">완료</button>
+                </div>
+                </form>
+            </div>
+
+            <!-- 강아지 알람 추가하기 끝 -->
+        </section>
+        <!-- 컨텐츠 영역 끝 -->
+
+
+    </div>
+    <!-- 전체 컨테이너 끝-->
+
+</body>
+
+</html>

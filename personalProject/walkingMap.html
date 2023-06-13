@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강아지는 귀여워</title>
+    <!-- 부트스트랩 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    
+
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/9ba187d4f0.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dogWalking.css">
+</head>
+
+<body>
+
+    <!-- 전체 컨테이너 시작 -->
+    <div class="container-fluid all-wrap">
+
+        <!-- 사이드 내비게이션 영역 시작 -->
+        <header id="header" class="header main-header boxShadow">
+            <h1 class="header-title">강아지는<br>귀여워</h1>
+            <!-- 사이드 내비 타이틀 -->
+            <ul class="gnb main-gnb">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">MENU</a></li>
+            </ul>
+            <!-- 사이드 내비 GNB -->
+            <button class="logout-btn">LOGOUT</button>
+        </header>
+        <!-- 사이드 내비게이션 영역 끝 -->
+
+
+        <!-- 컨텐츠 영역 시작 -->
+        <section class="main-visual">
+            <div class="weather boxShadow">
+                <div class="weather_today_container">
+                    <h2>오늘의 날씨</h2>
+                    <div class="weather_today">
+                        <div>
+                            <!-- 아이콘 자리 -->
+                            <p class="weather_today_temp"></p>
+                            <!-- 미세먼지 -->
+                        </div>
+
+                    </div>
+                </div>
+                <div class="weather_week_container">
+                    <h2>주간 날씨</h2>
+                    <ul class="weather_week">
+                        <li>
+                            <p class="weather_week_temp"></p>
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="map_container">
+                <div class="map boxShadow" id="map">
+                    <div class="map_title">
+                        <div class="map_title_date_place">
+                            <p class="map_title_date">
+                                <!-- 임시 -->
+                                2023-04-20
+                            </p>
+                            <p class="map_title_place">
+                                <!-- 임시 -->
+                                경기도 김포시 북변1로 계양천
+                            </p>
+                        </div>
+                        <div class="map_title_distance_time">
+                            <p class="map_title_distace">
+                                <!-- 임시 -->
+                                총4.5km
+                            </p>
+                            <p class="map_title_time">
+                                1h 45m
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map_list boxShadow">
+
+                </div>
+            </div>
+
+        </section>
+        <!-- 컨텐츠 영역 끝 -->
+
+
+    </div>
+    <!-- 전체 컨테이너 끝-->
+
+
+    <script>
+
+    </script>
+
+
+    <!-- 카카오맵 -->
+    <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=15f1676d01152dd0b84e69d0af43b2c1"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=15f1676d01152dd0b84e69d0af43b2c1&libraries=services,clusterer,drawing"></script>
+
+    <script>
+
+        var x;
+        var y;
+        const watchID = navigator.geolocation.watchPosition((position) => {
+            x = position.coords.latitude;
+            y = position.coords.longitude;
+
+            var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+            var options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(x , y), // 좌표
+            level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+
+        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체   
+
+        // 마커가 표시될 위치입니다 
+        var markerPosition  = new kakao.maps.LatLng(x, y); 
+
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker.setMap(map);
+        
+        
+
+
+
+        // HTML5의 geolocation으로 사용할 수 있는지 확인합니다 
+            if (navigator.geolocation) {
+                
+                // GeoLocation을 이용해서 접속 위치를 얻어옵니다
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    
+                    var lat = position.coords.latitude, // 위도
+                        lon = position.coords.longitude; // 경도
+                    
+                    var locPosition = new kakao.maps.LatLng(lat, lon), // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성합니다
+                        message = '<div style="padding:5px;">여기에 계신가요?!</div>'; // 인포윈도우에 표시될 내용입니다
+                    
+                    // 마커와 인포윈도우를 표시합니다
+                    displayMarker(locPosition, message);
+                        
+                });
+                
+            } else { // HTML5의 GeoLocation을 사용할 수 없을때 마커 표시 위치와 인포윈도우 내용을 설정합니다
+                
+                var locPosition = new kakao.maps.LatLng(33.450701, 126.570667),    
+                    message = 'geolocation을 사용할수 없어요..'
+                    
+                displayMarker(locPosition, message);
+            }
+
+            // 지도에 마커와 인포윈도우를 표시하는 함수입니다
+            function displayMarker(locPosition, message) {
+
+                // 마커를 생성합니다
+                var marker = new kakao.maps.Marker({  
+                    map: map, 
+                    position: locPosition
+                }); 
+                
+                var iwContent = message, // 인포윈도우에 표시할 내용
+                    iwRemoveable = true;
+
+                // 인포윈도우를 생성합니다
+                var infowindow = new kakao.maps.InfoWindow({
+                    content : iwContent,
+                    removable : iwRemoveable
+                });
+                
+                // 인포윈도우를 마커위에 표시합니다 
+                infowindow.open(map, marker);
+                
+                // 지도 중심좌표를 접속위치로 변경합니다
+                map.setCenter(locPosition);      
+            }    
+
+
+
+        
+        }); -->
+
+    </script>
+
+    <script src="js/weather.js"></script>
+</body>
+
+</html>

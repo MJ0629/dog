@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강아지는 귀여워</title>
+    <!-- 부트스트랩 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/9ba187d4f0.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dogProfile.css">
+</head>
+
+<body>
+
+    <!-- 전체 컨테이너 시작 -->
+    <div class="container-fluid all-wrap">
+
+        <!-- 사이드 내비게이션 영역 시작 -->
+        <header id="header" class="header main-header boxShadow">
+            <h1 class="header-title">강아지는<br>귀여워</h1>
+            <!-- 사이드 내비 타이틀 -->
+            <ul class="gnb main-gnb">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">MENU</a></li>
+            </ul>
+            <!-- 사이드 내비 GNB -->
+            <button class="logout-btn">LOGOUT</button>
+        </header>
+        <!-- 사이드 내비게이션 영역 끝 -->
+
+
+        <!-- 컨텐츠 영역 시작 -->
+        <section class="main-visual">
+            <div class="dog_profile_page">
+                <h2>강아지 정보 등록</h2>
+                <p>메인 화면에는 한마리의 강아지만 표시 가능합니다.</p>
+                <ul class="dog_profile_page_list">
+                    <!-- 강아지 정보 컨텐츠 -->
+                    <li class="boxShadow dog_profile_conts">
+                        <div class="dog_profile_image">PROFILEIMAGE</div>
+                        <div class="dog_profile_info">
+                            <ul>
+                                <li class="dog_profile_info_name">이름 : <span>초코</span></li>
+                                <li class="dog_profile_info_breed">견종 : <span>푸들</span></li>
+                                <li class="dog_profile_info_age">나이 : <span>8</span>살</li>
+                                <li class="dog_profile_info_weight">몸무게 : <span>5</span>KG</li>
+                            </ul>
+                            <p><strong>특이사항</strong> <span>피가 우리는 풀밭에 할지니, 귀는 소담스러운 날카로우나 꾸며 교향악이다. 그들은 이상을 인생에 동산에는 있음으로써 되려니와, 인류의 끓는 관현악이며, 힘있다. 방황하였으며, 어디 넣는 인간이 크고 것이다. 같이, 것은 용기가 천자만홍이 피고, 이상의 부패를 것이다. 풍부하게 위하여 우리 무엇이 그리하였는가? 긴지라 희망의 착목한는 힘있다. 우리 낙원을 인간이 것이다. 청춘의 찾아다녀도, 무엇이 듣기만 인생의 미인을 것이다. 몸이 그들은 있는 그들은 하는 있음으로써 이것은 눈에 것이다. 그들의 사랑의 찾아다녀도, 능히 현저하게 청춘 운다.</span></p>
+                        </div>
+                        <div class="dog_profile_btn btn_group">
+                            <button class="dog_profile_btn_delete btn_group_first" type="button">삭제</button>
+                            <button class="dog_profile_btn_edit btn_group_second" type="button">수정</button>
+                        </div>
+                        <div class="dog_profile_star_btn">
+                            <input type="checkbox" name="star" id="dog_profile_star" class="dog_profile_star_btn">
+                            <label for="dog_profile_star"><i class="fa-solid fa-star"></i></label>
+                        </div>
+                    </li>
+                    <!-- 강아지 정보 컨텐츠 -->
+                    
+                    <!-- 강아지 정보 추가  -->
+                    <li class="dog_profile_add_btn boxShadow">
+                        <a href="#">
+                            <i class="fa-sharp fa-solid fa-plus"></i>
+                            정보 추가하기
+                        </a>
+                    </li>
+                </ul>
+
+
+                <!-- 페이지네이션 -->
+                <nav aria-label="Page navigation">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- 페이지네이션 -->
+            </div>
+            <!-- 강아지 프로필 페이지 -->
+            <div class="dog_profile_add_wrap boxShadow">
+                <h2 class="dog_profile_add_title">강아지 프로필 신규 등록하기</h2>
+                <form action="">
+                    <div class="dog_profile_form">
+                        <div class="dog_profile_form_image">
+                            <div>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <ul class="dog_profile_form_wrap">
+                            <li>
+                                <label for="dog_profile_form_name">이름</label>
+                                <input type="text" placeholder="특수문자 제외 4자에서 16자까지 가능합니다." id="dog_profile_form_name">
+                            </li>
+                            <li>
+                                <label for="dog_profile_form_breed">견종</label>
+                                <input type="text" placeholder="특수문자 제외 4자에서 16자까지 가능합니다." id="dog_profile_form_breed">
+                            </li>
+                            <li>
+                                <label for="dog_profile_form_age">나이</label>
+                                <input type="none" readonly placeholder="강아지의 생년월일을 선택해주세요." id="dog_profile_form_age" class="form-control-plaintext">
+                                <i class="fa-regular fa-calendar-days"></i>
+                            </li>
+                            <li>
+                                <label for="dog_profile_form_weight">몸무게</label>
+                                <input type="number" id="dog_profile_form_weight">
+                                KG
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dog_profile_form_info">
+                        <label for="dog_profile_form_info">특이사항</label>
+                        <textarea placeholder="특이사항을 기록해주세요." id="dog_profile_form_info" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="dog_profile_form_btn btn_group">
+                        <button type="button" id="dog_profile_form_cancellBtn" class="btn_group_first">취소</button>
+                        <button type="submit" id="dog_profile_form_submitBtn" class="btn_group_second">완료</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- 강아지 프로필 추가 -->
+
+            <!-- 강아지 프로필 추가 -->
+
+        </section>
+        <!-- 컨텐츠 영역 끝 -->
+
+
+    </div>
+    <!-- 전체 컨테이너 끝-->
+
+</body>
+
+</html>

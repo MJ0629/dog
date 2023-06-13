@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+.form-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-title {
+    font-weight: bold;
+    letter-spacing: -3px;
+    margin-bottom: 68px;
+    text-align: center;
+}
+.form-wrap>form {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.form-wrap>form>input {
+    width: 100%;
+    min-height: 50px;
+    background-color: rgba(0, 0, 0, .05);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-size: .75rem;
+    margin-bottom: 1.5vh;
+}
+
+.form-btn {
+    min-height: 50px;
+    background-color: rgba(0, 0, 0, .15);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+
+/* 로그인 폼 */
+
+.form-check {
+    padding: 0;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: .85rem;
+    color: #888;
+    letter-spacing: -1px;
+    margin-bottom: 1vh;
+}
+.form-check span {
+    margin-right: 10px;
+}
+.form-check>input[type="checkbox"]#login-check {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+input[type="checkbox"]#login-check + span {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    border-radius: 100%;
+    position: relative;
+}
+input[type="checkbox"]#login-check:checked + span::after {
+    content: "✔";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #777;
+    transform: translate(8%, -40%);
+    font-size: 1.2rem;
+}
+
+.login-form-link {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-size: .8rem;
+    margin-top: 2vh;
+    color: #888;
+}
+.login-form-link li:not(:last-child)::after {
+    content: "|";
+    margin: 0 10px;
+}
+.sns-login-wrap {
+    width: 100%;
+    margin-top: 4vh;
+}
+.sns-login {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: -2px;
+    text-align: center;
+}
+.sns-login-link {
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 3vh;
+}
+
+
+
+
+/* 회원가입 폼 */
+
+.join-id {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+}
+#join-email {
+    width: 100%;
+    min-height: 50px;
+    background-color: rgba(0, 0, 0, .05);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-size: .75rem;
+    margin-bottom: 1.5vh;
+}
+#join-id-check{
+    min-width: 40px;
+    min-height: 30px;
+    position: absolute;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .02);
+    color: #777;
+    font-weight: 900;
+    font-size: .75rem;
+    top: 0;
+    right: 0;
+    margin: 14% 3% 0;
+    letter-spacing: -1px;
+}
+
+.join-form label {
+    color: #555;
+    font-size: .9rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin-bottom: 1.2vh;
+}

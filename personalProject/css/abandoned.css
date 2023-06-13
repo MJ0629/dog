@@ -1,0 +1,536 @@
+@charset "utf-8";
+.abandoned_wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.abandoned_top, .abandoned_bottom {
+    width: 100%;
+    padding: 20px;
+}
+.abandoned_top {
+    height: 46%;
+}
+.abandoned_bottom {
+    height: 52%;
+    position: relative;
+}
+.abandoned_top h2, .abandoned_bottom h2 {
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #555;
+    letter-spacing: -1px;
+}
+.abandoned_conts_match_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.abandoned_match {
+    display: flex;
+}
+
+
+/* 실종 강아지 정보  */
+
+
+.abandoned_conts {
+    position: relative;
+}
+.abandoned_conts_image {
+    border: 3px solid #ccc;
+    position: relative;
+    overflow: hidden;
+    min-width: 200px;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-weight: 900;
+}
+
+.abandoned_class {
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    background-color: #ccc;
+    top: -5%;
+    left: -21%;
+    transform: rotate(-45deg);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    line-height: 2.2;
+    color: #fff;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: 1px;
+}
+
+.abandoned_conts_info {
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid #ccc;
+    border-top: 0;
+    box-sizing: border-box;
+    padding: .6rem 1.2rem;
+    font-size: .75rem;
+    color: #555;
+}
+.abandoned_conts_info i {
+    width: 1.4rem;
+    color: #bbb;
+    font-size: .95rem;
+}
+.abandoned_conts_info>p {
+    margin-bottom: .5rem;
+}
+.abandoned_conts_info_breed {
+    font-size: .9rem;
+    font-weight: 900;
+}
+.abandoned_conts_information {
+    display: flex;
+    padding: 0;
+    margin-bottom: .7rem;
+}
+.abandoned_conts_information>li:not(:last-child)::after {
+    content: "/";
+    margin: 0 .3rem;
+    color: #555;
+}
+
+
+
+
+
+
+
+
+/* 실종 00 일째 글씨 */
+.abandoned_conts_image_match {
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    font-size: .85rem;
+}
+
+.abandoned_conts_image_match i {
+    font-size: 1.5rem;
+}
+
+
+
+/* 유기동물 리스트 */
+.more_btn {
+    color: #fff;
+    top: 20px;
+    right: 20px;
+}
+.more_btn:hover {
+    box-shadow: unset;
+}
+
+.abandoned_conts_wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.abandoned_conts_wrap.abandoned_conts_small> .abandoned_conts {
+    margin-right: 1rem;
+}
+
+
+
+/* 유기동물 등록 폼 시작 */
+.abandoned_form { 
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding: 0 2.5vw;
+}
+/* 전체 등록 폼 박스 */
+
+
+.abandoned_form_title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #444;    
+    text-align: center;
+    padding: 1.3rem 0;
+    border-bottom: 1px solid #ccc;
+}
+/* 등록 폼 제목 */
+
+
+.abandoned_form label {
+    color: #666;
+    font-size: .9rem;
+}
+/* 등록 폼에 있는 라벨 색,크기 공통으로 맞춰주기 */
+
+
+.abandoned_form ::placeholder {
+    font-size: .6rem;
+    color: #aaa;
+}
+/* 등록 폼에 있는 홀더 안에 문구 크기  */
+
+
+.abandoned_form input[type="text"] {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+/* 등록 폼에 있는 input 타입 text 공통으로 텍스트 선 */
+
+
+
+/* 유기동물 등록 폼 상단영역 */
+.abandoned_form_top {
+    width: 100%;
+    font-size: .5rem;
+    color: #aaa;
+    margin-top: 1rem;
+}
+.abandoned_form_img_list {
+    display: flex;
+    margin: 0;
+}
+.abandoned_form_img_list li{
+    min-width: 80px;
+    min-height: 80px;
+    margin-right: 10px;
+    margin-bottom: 3px;
+    background-color: #ddd;
+}
+/* 유기동물 등록 폼 상단영역 */
+
+/* 유기동물 등록 폼 중앙영역 */
+.abandoned_form_middle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.abandoned_form_image_add {
+    min-width: 280px;
+    min-height: 280px;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-right: 10px;
+}
+.abandoned_form_image_add>i {
+    font-size: 7rem;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+/* 등록 폼 사진 추가 영역 */
+
+
+
+.abandoned_form_middle>ul {
+    width: 55%;
+    margin-bottom: 0;
+}
+.abandoned_form_middle>ul>li:not(:last-child) {
+    width: 100%;
+    min-height: 35px;
+    margin-bottom: 7px;
+}
+.abandoned_form_middle>ul>li>select {
+    width: 60%;
+    font-size: .8rem;
+    color: #444;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0 1rem;
+}
+.abandoned_form_middle>ul>li>input[type="date"] {
+    width: 60%;
+    min-height: 100%;
+    font-size: .8rem;
+    color: #444;
+    padding: 0 1.1rem;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#abandoned_form_class, #abandoned_form_date, #abandoned_form_place {
+    display: flex;
+    justify-content: space-between;
+}
+
+.abandoned_form_middle>ul>li>input[type="text"] {
+    height: 2.2rem;
+}
+
+/* 유기동물 등록 폼 중앙영역 */
+
+
+
+/* 유기동물 등록 폼 하단영역 */
+.abandoned_form_bottom,.abandoned_form_bottom>ul {
+    width: 100%;
+}
+
+.abandoned_form_bottom>ul>li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.abandoned_form_bottom>ul>li>div:first-child {
+    width: 42%;
+}
+.abandoned_form_bottom>ul>li>div:last-child {
+    width: 55%;
+}
+.abandoned_form_bottom>ul>li>div>ul {
+    display: flex;
+    width: 100%;
+}
+.abandoned_form_bottom>ul>li>div>label {
+    margin: 6px 0;
+}
+.abandoned_form_bottom>div {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+}
+.abandoned_form_bottom>div>label {
+    width: 20%;
+}
+.abandoned_form_bottom>div>textarea {
+    width: 80%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+#abandoned_form_gender label {
+    font-size: .75rem;
+    color: #777;
+    margin-left: 5px;
+}
+#abandoned_form_gender>li {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+#abandoned_form_gender>li:last-child {
+    width: 35%;
+}
+#abandoned_form_gender>li input[type="radio"] {
+    width: .7rem;
+
+}
+
+.abandoned_form_bottom input[type="text"] {
+    height: 2.2rem;
+}
+
+/* 유기동물 등록 폼 하단영역 */
+.abandoned_form_btn button{
+    min-height: 38px;
+}
+
+
+
+
+/* 유기동물 등록 폼 끝 */
+
+
+
+
+/*  등록 된 유기동물 보이는 글 화면 */
+.abandoned_conts_detail {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.abandoned_conts_detail_title {
+    border: 0;
+    position: relative;
+    color: #fff;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.abandoned_conts_title_text {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    font-weight: 900;
+}
+.abandoned_conts_detail_title button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 50px;
+    min-height: 50px;
+    color: #fff;
+    background-color: transparent;
+}
+
+
+
+/* 상단 영역 (이미지 있는 부분) */
+.abandoned_conts_detail_top {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.abandoned_conts_detail_img {
+    min-width: 300px;
+    min-height: 300px;
+    background-color: #ddd;
+    position: relative;
+}
+.abandoned_conts_detail_img button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    min-width: 25px;
+    min-height: 25px;
+    background-color: #fff;
+    color: #777; 
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .05);
+}
+
+.abandoned_conts_detail_info {
+    width: 60%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    font-size: .8rem;
+    color: #999;
+}
+.abandoned_conts_detail_info ul{
+    margin-bottom: 0;
+    padding-top: .8rem;
+    padding-right: 2rem;
+    text-align-last: left;
+}
+.abandoned_conts_detail_info ul li {
+    display: flex;
+}
+.abandoned_conts_detail_info ul li>div{
+    display: flex;
+    width: 100%;
+}
+.abandoned_conts_detail_info ul li>p:first-child {
+    width: 40%;
+    color: #777;
+    font-size: .9rem;
+}
+.abandoned_conts_detail_info ul li>p:first-child>i {
+    font-size: 1.1rem;
+    width: 15%;
+}
+
+.line {
+    margin: 1rem 0;
+}
+
+.abandoned_conts_detail_info ul li>div>p:first-child {
+    width: 30%;
+    color: #777;
+    font-size: .9rem;
+}
+.abandoned_conts_detail_middle {
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+.abandoned_conts_detail_middle div {
+    display: flex;
+}
+.abandoned_conts_detail_middle>div>span {
+    width: 20%;
+    color: #777;
+    font-size: .9rem;
+}
+.abandoned_conts_detail_middle>div>p {
+    width: 80%;
+    color: #999;
+    font-size: .8rem;
+}
+.abandoned_conts_detail_bottom {
+    padding: 2rem;
+}
+.abandoned_conts_detail_bottom>ul {
+    display: flex;
+    padding: 1rem 0;
+    margin-bottom: .5rem;
+}
+.abandoned_conts_detail_bottom>ul>li {
+    min-width: 160px;
+    min-height: 160px;
+    color: #fff;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.abandoned_detail_btn {
+    justify-content: flex-end;
+}
+.abandoned_detail_btn>button {
+    width: 15%;
+    min-height: 40px;
+}
+.abandoned_detail_btn_edit {
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 유기견 실종 보호 목격 구분 */
+.abandoned_missing_border {
+    border-color: #c54a4a;
+}
+.abandoned_class_missing {
+    background-color: #c54a4a;
+}
+.abandoned_protect_border {
+    border-color: #5eb73f;
+}
+.abandoned_class_protect {
+    background-color: #5eb73f;
+}
+.abandoned_witness_border {
+    border-color: #ffd25e;
+}
+.abandoned_class_witness {
+    background-color: #ffd25e;
+}
+/* 유기견 실종 보호 목격 구분 */

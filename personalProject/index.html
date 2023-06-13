@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강아지는 귀여워</title>
+    <!-- 부트스트랩 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/9ba187d4f0.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- 전체 컨테이너 시작 -->
+    <div class="container-fluid all-wrap">
+
+        <!-- 사이드 내비게이션 영역 시작 -->
+        <header id="header" class="header main-header boxShadow">
+            <h1 class="header-title">강아지는<br>귀여워</h1>
+            <!-- 사이드 내비 타이틀 -->
+            <ul class="gnb main-gnb">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">MENU</a></li>
+            </ul>
+            <!-- 사이드 내비 GNB -->
+            <button class="logout-btn">LOGOUT</button>
+        </header>
+        <!-- 사이드 내비게이션 영역 끝 -->
+
+
+        <!-- 컨텐츠 영역 시작 -->
+        <section class="main-visual">
+            <div class="main-content-left">
+                
+                <div class="main-content-left-top">
+
+                    <div class="main-dog-profile boxShadow">
+                        <div>
+                            PROFILE<br>
+                            IMAGE
+                        </div>
+                        <ul>
+                            <li>이름 : <span class="main-profile-name">초코</span></li>
+                            <li>견종 : <span class="main-profile-breed">푸들</span></li>
+                            <li>나이 : <span class="main-profile-age">8살</span></li>
+                            <li>몸무게 : <span class="main-profile-weight">5KG</span></li>
+                        </ul>
+                    </div>
+                    <!-- 메인 강아지 프로필 -->
+
+                    <div class="main-dog-weather boxShadow">
+                        <div class="main-weather-temperature">
+                            <i class="bi bi-cloud-sun"></i>
+                            <h2>26º</h2>
+                        </div>
+                        <ul>
+                            <li class="main-weather-dust"><span></span>　- 미세먼지 주의</li>
+                            <li class="main-weather-dust"><span></span>　- 초 미세먼지 나쁨</li>
+                        </ul>
+                    </div>
+                    <!-- 메인 오늘의 날씨 -->
+
+                    <div class="main-dog-walkingMap boxShadow">
+                        <ul class="main-dog-walkingMap-text">
+                            <li>최근 산책</li>
+                            <li class="main-dog-walkingMap-distance">5km</li>
+                            <li class="main-dog-walkingMap-time">1h00m</li>
+                        </ul>
+                        <div></div>
+                    </div>
+                    <!-- 메인 산책 지도 -->
+
+                </div>
+                <!-- 메인페이지 왼쪽 상단 영역 끝 -->
+
+                <div class="main-content-left-bottom boxShadow">
+
+                    <div class="main-dog-alarm hospital">
+                        <h2>병원 알리미</h2>
+
+                    <div class="main-dog-alarm-top-contain">
+                        <!-- 병원 알림 컨텐츠 01 시작 -->
+                        <div class="main-dog-alarm-conts dog_alarm_conts">
+                            <div class="main-dog-alarm-icon dog_alarm_icon">
+                                <i class="fa-solid fa-bell"></i>
+                            </div>
+                            <h3 class="main-dog-alarm-d-day">D-1</h3>
+                            <ul class="main-dog-alarm-text dog_alarm_info">
+                                <li class="main-dog-alarm-note dog_alarm_note">
+                                    이개혈종 배액 드레싱 교체
+                                </li>
+                                <li class="main-dog-alarm-date">
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                    2023-05-25
+                                </li>
+                                <li class="main-dog-alarm-time">
+                                    <i class="fa-solid fa-clock"></i>
+                                    12:30
+                                </li>
+                                <li class="main-dog-alarm-place">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    하나동물병원
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 병원 알림 컨텐츠 01 끝 -->
+
+                        <!-- 병원 알림 컨텐츠 02 시작 -->
+                        <div class="main-dog-alarm-conts dog_alarm_conts">
+                            <div class="main-dog-alarm-icon dog_alarm_icon">
+                                <i class="fa-solid fa-bell"></i>
+                            </div>
+                            <h3 class="main-dog-alarm-d-day">D-1</h3>
+                            <ul class="main-dog-alarm-text dog_alarm_info">
+                                <li class="main-dog-alarm-note dog_alarm_note">
+                                    이개혈종 배액 드레싱 교체
+                                </li>
+                                <li class="main-dog-alarm-date">
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                    2023-05-25
+                                </li>
+                                <li class="main-dog-alarm-time">
+                                    <i class="fa-solid fa-clock"></i>
+                                    12:30
+                                </li>
+                                <li class="main-dog-alarm-place">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    하나동물병원
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 병원 알림 컨텐츠 02 끝 -->
+
+                        <!-- 병원 알림 컨텐츠 03 시작 -->
+                        <div class="main-dog-alarm-conts dog_alarm_conts">
+                            <div class="main-dog-alarm-icon dog_alarm_icon">
+                                <i class="fa-solid fa-bell"></i>
+                            </div>
+                            <h3 class="main-dog-alarm-d-day">D-1</h3>
+                            <ul class="main-dog-alarm-text dog_alarm_info">
+                                <li class="main-dog-alarm-note dog_alarm_note">
+                                    이개혈종 배액 드레싱 교체
+                                </li>
+                                <li class="main-dog-alarm-date">
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                    2023-05-25
+                                </li>
+                                <li class="main-dog-alarm-time">
+                                    <i class="fa-solid fa-clock"></i>
+                                    12:30
+                                </li>
+                                <li class="main-dog-alarm-place">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    하나동물병원
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 병원 알림 컨텐츠 03 끝 -->
+                    </div>
+
+                    </div>
+                    <!-- 메인페이지 병원 알리미 영역 -->
+
+                    <div class="line"></div>
+
+                    <div class="main-dog-alarm vaccination">
+                        <h2>예방접종</h2>
+
+                        <div class="main-dog-alarm-bottom-contain">
+                            <!-- 예방접종 알림 컨텐츠 01 시작 -->
+                            <div class="main-dog-alarm-conts dog_alarm_conts">
+                                <div class="main-dog-alarm-icon dog_alarm_icon">
+                                    <i class="fa-solid fa-bell"></i>
+                                </div>
+                                <h3 class="main-dog-alarm-d-day">D-3</h3>
+                                <ul class="main-dog-alarm-text dog_alarm_info">
+                                    <li class="main-dog-alarm-note dog_alarm_note">
+                                        광견병 예방 접종
+                                    </li>
+                                    <li class="main-dog-alarm-date">
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                        2023-06-25
+                                    </li>
+                                    <li class="main-dog-alarm-time">
+                                        <i class="fa-solid fa-clock"></i>
+                                        12:30
+                                    </li>
+                                    <li class="main-dog-alarm-place">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        동행동물병원
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 예방접종 알림 컨텐츠 01 끝 -->
+
+                            <!-- 예방접종 알림 컨텐츠 02 시작 -->
+                            <div class="main-dog-alarm-conts dog_alarm_conts">
+                                <div class="main-dog-alarm-icon dog_alarm_icon">
+                                    <i class="fa-solid fa-bell"></i>
+                                </div>
+                                <h3 class="main-dog-alarm-d-day">D-3</h3>
+                                <ul class="main-dog-alarm-text dog_alarm_info">
+                                    <li class="main-dog-alarm-note dog_alarm_note">
+                                        광견병 예방 접종
+                                    </li>
+                                    <li class="main-dog-alarm-date">
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                        2023-06-25
+                                    </li>
+                                    <li class="main-dog-alarm-time">
+                                        <i class="fa-solid fa-clock"></i>
+                                        12:30
+                                    </li>
+                                    <li class="main-dog-alarm-place">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        동행동물병원
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 예방접종 알림 컨텐츠 02 끝 -->
+
+                            <!-- 예방접종 알림 컨텐츠 03 시작 -->
+                            <div class="main-dog-alarm-conts dog_alarm_conts">
+                                <div class="main-dog-alarm-icon dog_alarm_icon">
+                                    <i class="fa-solid fa-bell"></i>
+                                </div>
+                                <h3 class="main-dog-alarm-d-day">D-3</h3>
+                                <ul class="main-dog-alarm-text dog_alarm_info">
+                                    <li class="main-dog-alarm-note dog_alarm_note">
+                                        광견병 예방 접종
+                                    </li>
+                                    <li class="main-dog-alarm-date">
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                        2023-06-25
+                                    </li>
+                                    <li class="main-dog-alarm-time">
+                                        <i class="fa-solid fa-clock"></i>
+                                        12:30
+                                    </li>
+                                    <li class="main-dog-alarm-place">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        동행동물병원
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 예방접종 알림 컨텐츠 03 끝 -->
+
+                        </div>
+                    </div>
+                    <!-- 메인페이지 예방접종 알림 영역 -->
+                    
+                    <div class="main-dog-alarm-popup">
+                        <h2><i class="fa-solid fa-bell"></i></h2>
+                        
+                        <ul class="main-dog-alarm-popup-text">
+                            <li>오늘은</li>
+                            <li class="main-dog-alarm-popup-text-name"><span>초코</span></li>
+                            <li class="main-dog-alarm-popup-text-place"><span>하나동물병원</span>에서</li>
+                            <li class="main-dog-alarm-popup-text-time"><span>12:30</span>에</li>
+                            <li class="main-dog-alarm-popup-text-note"><span>이개혈종 배액 드레싱 교체</span></li>
+                            <li>예정일입니다.</li>
+                        </ul>
+
+                        <button class="main-dog-alarm-popup-close-btn"><i class="fa-solid fa-xmark"></i></button>
+
+                    </div>
+
+
+                    <button class="main-dog-alarm-more-btn more_btn"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <!-- 메인페이지 병원 알림 -->
+                <!-- 메인페이지 왼쪽 하단 영역 끝 -->
+            </div>
+            <!-- 메인페이지 왼쪽 영역 끝 -->
+
+            <div class="main-content-right abandonedDog boxShadow">
+                <div class="main-abandonedDog-title">
+                    <h2>유기동물들의 주인을 찾아주세요</h2>
+                    <p>더보기 ></p>
+                </div>
+                <!-- 유기견 타이틀 -->
+
+                <div class="main-abandonedDog-conts-contain">
+
+                    <!-- 유기동물 01 시작 -->
+                    <div class="main-abandonedDog-conts">
+                        <div class="main-abandonedDog-conts-class">보호</div>
+                        Dog Image
+                        <ul class="main-abandonedDog-conts-hover-box">
+                            <li class="main-abandonedDog-conts-breed">믹스견</li>
+                            <li class="main-abandonedDog-conts-info">수컷/황색/6살/10kg</li>
+                            <li class="main-abandonedDog-conts-time"><i class="fa-solid fa-clock"></i> 2023-04-12</li>
+                            <li class="main-abandonedDog-conts-place"><i class="fa-solid fa-location-dot"></i> 양촌읍 해평리</li>
+                        </ul>
+                    </div>
+                    <!-- 유기동물 01 끝 -->
+
+                    <!-- 유기동물 02 시작 -->
+                    <div class="main-abandonedDog-conts">
+                        <div class="main-abandonedDog-conts-class">보호</div>
+                        Dog Image
+                        <ul class="main-abandonedDog-conts-hover-box">
+                            <li class="main-abandonedDog-conts-breed">믹스견</li>
+                            <li class="main-abandonedDog-conts-info">수컷/황색/6살/10kg</li>
+                            <li class="main-abandonedDog-conts-time"><i class="fa-solid fa-clock"></i> 2023-04-12</li>
+                            <li class="main-abandonedDog-conts-place"><i class="fa-solid fa-location-dot"></i> 양촌읍 해평리</li>
+                        </ul>
+                    </div>
+                    <!-- 유기동물 02 끝 -->
+
+                    <!-- 유기동물 03 시작 -->
+                    <div class="main-abandonedDog-conts">
+                        <div class="main-abandonedDog-conts-class">보호</div>
+                        Dog Image
+                        <ul class="main-abandonedDog-conts-hover-box">
+                            <li class="main-abandonedDog-conts-breed">믹스견</li>
+                            <li class="main-abandonedDog-conts-info">수컷/황색/6살/10kg</li>
+                            <li class="main-abandonedDog-conts-time"><i class="fa-solid fa-clock"></i> 2023-04-12</li>
+                            <li class="main-abandonedDog-conts-place"><i class="fa-solid fa-location-dot"></i> 양촌읍 해평리</li>
+                        </ul>
+                    </div>
+                    <!-- 유기동물 03 끝 -->
+
+                    <!-- 유기동물 04 시작 -->
+                    <div class="main-abandonedDog-conts">
+                        <div class="main-abandonedDog-conts-class">보호</div>
+                        Dog Image
+                        <ul class="main-abandonedDog-conts-hover-box">
+                            <li class="main-abandonedDog-conts-breed">믹스견</li>
+                            <li class="main-abandonedDog-conts-info">수컷/황색/6살/10kg</li>
+                            <li class="main-abandonedDog-conts-time"><i class="fa-solid fa-clock"></i> 2023-04-12</li>
+                            <li class="main-abandonedDog-conts-place"><i class="fa-solid fa-location-dot"></i> 양촌읍 해평리</li>
+                        </ul>
+                    </div>
+                    <!-- 유기동물 04 끝 -->
+
+                    <!-- 유기동물 05 시작 -->
+                    <div class="main-abandonedDog-conts">
+                        <div class="main-abandonedDog-conts-class">보호</div>
+                        Dog Image
+                        <ul class="main-abandonedDog-conts-hover-box">
+                            <li class="main-abandonedDog-conts-breed">믹스견</li>
+                            <li class="main-abandonedDog-conts-info">수컷/황색/6살/10kg</li>
+                            <li class="main-abandonedDog-conts-time"><i class="fa-solid fa-clock"></i> 2023-04-12</li>
+                            <li class="main-abandonedDog-conts-place"><i class="fa-solid fa-location-dot"></i> 양촌읍 해평리</li>
+                        </ul>
+                    </div>
+                    <!-- 유기동물 05 끝 -->
+
+                    <!-- 유기동물 06 시작 -->
+                    <div class="main-abandonedDog-conts">
+                        <div class="main-abandonedDog-conts-class">보호</div>
+                        Dog Image
+                        <ul class="main-abandonedDog-conts-hover-box">
+                            <li class="main-abandonedDog-conts-breed">믹스견</li>
+                            <li class="main-abandonedDog-conts-info">수컷/황색/6살/10kg</li>
+                            <li class="main-abandonedDog-conts-time"><i class="fa-solid fa-clock"></i> 2023-04-12</li>
+                            <li class="main-abandonedDog-conts-place"><i class="fa-solid fa-location-dot"></i> 양촌읍 해평리</li>
+                        </ul>
+                    </div>
+                    <!-- 유기동물 06 끝 -->
+
+                    <!-- 유기동물 07 시작 -->
+                    <div class="main-abandonedDog-conts">
+                        <div class="main-abandonedDog-conts-class">보호</div>
+                        Dog Image
+                        <ul class="main-abandonedDog-conts-hover-box">
+                            <li class="main-abandonedDog-conts-breed">믹스견</li>
+                            <li class="main-abandonedDog-conts-info">수컷/황색/6살/10kg</li>
+                            <li class="main-abandonedDog-conts-time"><i class="fa-solid fa-clock"></i> 2023-04-12</li>
+                            <li class="main-abandonedDog-conts-place"><i class="fa-solid fa-location-dot"></i> 양촌읍 해평리</li>
+                        </ul>
+                    </div>
+                    <!-- 유기동물 07 끝 -->
+
+                    <!-- 유기동물 08 시작 -->
+                    <div class="main-abandonedDog-conts">
+                        <div class="main-abandonedDog-conts-class">보호</div>
+                        Dog Image
+                        <ul class="main-abandonedDog-conts-hover-box">
+                            <li class="main-abandonedDog-conts-breed">믹스견</li>
+                            <li class="main-abandonedDog-conts-info">수컷/황색/6살/10kg</li>
+                            <li class="main-abandonedDog-conts-time"><i class="fa-solid fa-clock"></i> 2023-04-12</li>
+                            <li class="main-abandonedDog-conts-place"><i class="fa-solid fa-location-dot"></i> 양촌읍 해평리</li>
+                        </ul>
+                    </div>
+                    <!-- 유기동물 08 끝 -->
+
+                    <!-- 유기동물 09 시작 -->
+                    <div class="main-abandonedDog-conts">
+                        <div class="main-abandonedDog-conts-class">보호</div>
+                        Dog Image
+                        <ul class="main-abandonedDog-conts-hover-box">
+                            <li class="main-abandonedDog-conts-breed">믹스견</li>
+                            <li class="main-abandonedDog-conts-info">수컷/황색/6살/10kg</li>
+                            <li class="main-abandonedDog-conts-time"><i class="fa-solid fa-clock"></i> 2023-04-12</li>
+                            <li class="main-abandonedDog-conts-place"><i class="fa-solid fa-location-dot"></i> 양촌읍 해평리</li>
+                        </ul>
+                    </div>
+                    <!-- 유기동물 09 끝 -->
+
+                </div>
+
+            </div>
+            <!-- 메인페이지 유기견 영역 -->
+            <!-- 메인페이지 오른쪽 영역 끝 -->
+
+        </section>
+        <!-- 컨텐츠 영역 끝 -->
+
+
+    </div>
+    <!-- 전체 컨테이너 끝-->
+
+</body>
+
+</html>

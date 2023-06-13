@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+.dog_profile_page {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    padding-left: 20px;
+    display: none;
+}
+.dog_profile_page>h2 {
+    width: 100%;
+    height: 6%;
+    display: flex;
+    align-items: flex-end;
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin-left: 10px;
+}
+.dog_profile_page>p {
+    width: 100%;
+    height: 3%;
+    font-size: .8rem;
+    margin-left: 12px;
+}
+.dog_profile_page_list {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.dog_profile_page_list li {
+    width: 49%;
+    height: 40%;
+}
+.dog_profile_add_btn {
+    background-color: #dedede;
+    color: #fff;
+}
+.dog_profile_add_btn a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10vw;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+.dog_profile_add_btn a i {
+    font-size: 6rem;
+}
+
+.dog_profile_conts {
+    padding: 2vw;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dog_profile_image {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+    color: #999;
+} 
+.dog_profile_info {
+    width: 70%;
+    height: 100%;
+    display: block;
+}
+.dog_profile_info>ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1.3vh 0;
+}
+.dog_profile_info>p {
+    margin: 0;
+    max-height: 100px;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+}
+
+.dog_profile_btn {
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+}
+.dog_profile_btn>button {
+    width: 90px;
+    height: 35px;
+    font-size: .8rem;
+}
+.dog_profile_btn_delete {
+    color: #bbb;
+    background-color: #fff;
+    border: 1px solid #bbb;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+.dog_profile_btn_edit {
+    color: #fff;
+    background-color: #bbb;
+}
+.dog_profile_star_btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+input#dog_profile_star {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+input[type="checkbox"]#dog_profile_star + label {
+    font-size: 1.5rem;
+    color: #aaa;
+}
+input[type="checkbox"]#dog_profile_star:checked + label {
+    color: rgb(248, 229, 53);
+}
+
+
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* 강아지 프로필 신규등록 */
+.dog_profile_add_wrap {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding: 50px 4vw;
+    /* display: none; */
+}
+.dog_profile_add_title {
+    font-size: 1.4rem;
+    font-weight: 900;
+    height: 10%;
+}
+.dog_profile_add_wrap form {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #555;
+    font-weight: 900;
+    font-size: .95rem;
+}
+.dog_profile_form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    margin-bottom: 20px;
+}
+
+.dog_profile_form_image {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dog_profile_form_wrap {
+    width: 65%;
+}
+.dog_profile_form_image>div {
+    width:  180px;
+    height: 180px;
+    border-radius: 100%;
+    background-color: #ddd;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.dog_profile_form_wrap li {
+    width: 90%;
+    height: 40px;
+    padding: 0 10px 5px;
+    box-sizing: border-box;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    color: #777;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+.dog_profile_form_wrap>li>label {
+    width: 20%;
+    color: #555;
+    font-weight: 900;
+    font-size: .95rem;
+}
+.dog_profile_form_wrap>li>input {
+    width: 80%;
+}
+.dog_profile_form_wrap>li>input::placeholder {
+    font-size: .75rem;
+}
+.form-control-plaintext {
+    padding: 0;
+}
+.dog_profile_form_wrap>li>i {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    cursor: pointer;
+    color: #bbb;
+}
+.dog_profile_form_info {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+.dog_profile_form_info textarea {
+    height: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #bbb;
+}
+.dog_profile_form_info textarea::placeholder {
+    font-size: .8rem;
+}

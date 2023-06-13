@@ -1,0 +1,88 @@
+@charset "utf-8";
+.main-visual {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 1.5rem;
+}
+.weather {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    padding: 1rem;
+}
+
+.weather h2 {
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #555;
+}
+
+.weather_today {
+    width: 100%;
+    height: 100px;
+}
+.weather_today_temp {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.map_container {
+    width: 100%;
+    height: 73%;
+    display: flex;
+    justify-content: space-between;
+}
+.map {
+    width: 42%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #555;
+}
+.map_title {
+    width: 100%;
+    min-height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.map_title div {
+    display: flex;
+}
+.map_title p {
+    margin: 0;
+}
+.map_title_date_place {
+
+    font-size: .9rem;
+}
+.map_title_distance_time {
+    font-size: .8rem;
+}
+
+
+
+
+
+.map_list {
+    width: 56.5%;
+    height: 100%;
+}

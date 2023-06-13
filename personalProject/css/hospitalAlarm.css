@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+
+.dog_hospital_alarm_page {
+    width: 100%;
+    margin-left: 2vw;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    /* display: none; */
+}
+.dog_hospital_alarm_page .alarm_top_wrap,.dog_hospital_alarm_page .alarm_bottom_wrap {
+    height: 40%;
+    padding: 3vh 0 0;
+    box-sizing: border-box;
+}
+.alrarm_title {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #555;
+}
+.alarm_conts_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 80%;
+}
+
+.dog_alarm_conts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.dog_alarm_info {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.dog_alarm_note {
+    margin: 20px 0;
+}
+.dog_alarm_place {
+    margin: 10px 0;
+    font-weight: 900;
+}
+.dog_alarm_conts_btn {
+    width: 100%;
+    min-height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.dog_alarm_conts_btn button {
+    width: 50%;
+    min-height: 100%;
+    font-size: .8rem;
+    background-color: rgba(0, 0, 0, .03);
+    color: #888;
+}
+.dog_alarm_conts_btn .dog_alarm_conts_delete {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.pager {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.hospital_alarm_more_btn {
+    top: 3.5vh;
+    right: 1.5vw;
+}
+
+
+
+/* 강아지 알람 추가하기 시작 */
+.dog_alarm_add_wrap {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding: 50px 4vw;
+    display: none;
+}
+.dog_alarm_add_wrap>form,.dog_alarm_add_wrap>form>ul,.dog_alarm_add_wrap>form>ul>li {
+    width: 100%;
+}
+.dog_alarm_add_wrap form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.dog_alarm_add_title {
+    color: #555;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.dog_alarm_add_wrap>form>ul>li h4 {
+    font-size: 1rem;
+    color: #888;
+    margin: 20px 0;
+}
+.alarm_add_category_btn {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 48%;
+    box-sizing: border-box;
+}
+.alarm_add_category_btn button { 
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    color: #fff;
+    font-size: 1.4rem;
+}
+.alarm_add_date_time {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    color: #555;
+}
+.alarm_add_date_time div {
+    width: 50%; 
+    min-height: 90px;
+}
+.alarm_add_date_time span {
+    width: 100%;
+}
+.alarm_add_date_time i {
+    margin: 0 10px;
+    color: #888;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-inner-spin-button,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+}
+textarea::placeholder {
+    color: #ccc;
+    font-size: .85rem;
+}
+
+
+.btn_group button {
+    min-height: 50px;
+}

@@ -1,0 +1,469 @@
+@charset "utf-8";
+
+*{margin: 0;padding: 0;border: 0}
+ul{list-style: none; padding: 0;}
+a{text-decoration: none; color:inherit}
+/* reset CSS */
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+/* NOTO SANS FONT */
+
+
+/* 메인 폰트 */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 전체 감싸주는 상자  */
+.all-wrap {
+    width: 100%;
+    height: 100vh;
+    padding: 20px 30px;
+    background-color: rgba(0,0,0,.1);
+    display: flex;
+}
+
+/*  공통 영역  */
+
+/* 박스 섀도우 */
+.boxShadow {
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.1);
+    border-radius: 20px;
+}
+/* 버튼 그룹 (수정,삭제,확인,완료,취소 등 2개의 버튼 그룹) */
+.btn_group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn_group>button {
+    width: 48%;
+    border: 1px solid #bbb;
+    background-color: #fff;
+    color: #bbb;
+    box-sizing: border-box;
+    font-size: .95rem;
+    font-weight: 900;
+}
+/* btn_group_first */
+.btn_group>button.btn_group_second {
+    border: unset;
+    background-color: #bbb;
+    color: #fff;
+}
+
+.dividline {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.more_btn {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: transparent;
+    background-color: #dfdfdf;
+    color: #777;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.08);
+}
+
+/* 사이드 내비게이션 */
+.header {
+    width: 7.3%;
+    height: 100%;
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    color: #555;
+}
+
+.header-title {
+    margin-top: 30px;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+.gnb {
+    padding: 0;
+    padding-bottom: 21vh;
+    box-sizing: border-box;
+    height: 60%;
+    font-weight: 400;
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gnb li:first-child {
+    margin-bottom: 4vh;
+}
+
+.logout-btn {
+    background-color: transparent;
+    font-weight: 300;
+}
+
+/* 사이드 내비게이션 끝 */
+
+
+.main-visual {
+    width: 92.7%;
+    height: 100%;
+    display: flex;
+}
+
+.main-content-left {
+    width: 55%;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.main-content-left-top {
+    width: 100%;
+    height: 28%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content-left-top>div {
+    width: 32%;
+    height: 100%;
+}
+
+/* 강아지 프로필 시작 */
+.main-dog-profile {
+    padding: 3vh 2.7vh;
+}
+
+.main-dog-profile>div {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0,0,0,.1);
+    border-radius: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.1;
+    font-size: .8rem;
+    margin-bottom: 3vh;
+}
+.main-dog-profile ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    text-align: start;
+}
+.main-dog-profile>ul>li {
+    width: 50%;
+    font-size: .9rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.main-dog-profile>ul>li>span {
+    font-weight: 700;
+}
+/* 강아지 프로필 끝 */
+
+/* 메인 날씨 시작 */
+.main-weather-temperature {
+    width: 100%;
+    height: 58%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.main-weather-temperature i {
+    font-size: 8vh;
+}
+.main-weather-temperature h2 {
+    font-weight: 900;
+    font-size: 2.8rem;
+}
+.main-weather-dust {
+    display: flex;
+    align-items: center;
+    color: orange;
+    margin-top: 10px;
+    font-size: .8rem;
+}
+.main-weather-dust span {
+    width: 20px;
+    height: 10px;
+    display: block;
+    background-color: orange;
+}
+/* 메인 날씨 끝 */
+/* 메인 지도 시작 */
+.main-dog-walkingMap {
+    padding: 10px;
+    position: relative;
+}
+.main-dog-walkingMap>div {
+    width: 100%;
+    height: 100%;
+    background-color: #bbb;
+    border-radius: 20px;
+}
+.main-dog-walkingMap-text {
+    position: absolute;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: .8rem;
+}
+/* 메인 지도 끝 */
+
+
+/* 병원 알림 시작 */
+.main-content-left-bottom {
+    width: 100%;
+    height: 70%;
+    margin-top: 20px;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.main-content-left-bottom h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+}
+.vaccination h2 {
+    margin-top: 30px;
+}
+.dog_alarm_conts {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0,0,0,.1);
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #333;
+}
+.dog_alarm_conts>ul {
+    padding: 0;
+}
+.dog_alarm_icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: #ccc;
+    box-shadow: 3px 3px 6px rgba(0,0,0,.1);
+    color: #fff;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    transform: translateY(-50%);
+}
+.dog_alarm_info {
+    font-size: .8rem;
+}
+.dog_alarm_info .dog_alarm_note {
+    font-weight: 900;
+    font-size: .9rem;
+    letter-spacing: -1px;
+    color: #333;
+}
+.dog_alarm_info li {
+    color: #666;
+}
+.dog_alarm_info i {
+    color: #ccc;
+    margin: 0 5px;
+}
+
+.main-dog-alarm-conts {
+    margin-right: 10px;
+}
+.main-dog-alarm-d-day {
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+.main-dog-alarm-text .main-dog-alarm-note {
+    color: #777;
+    margin-bottom: 20px;
+}
+.main-dog-alarm-text>li {
+    margin: 10px 0 0;
+}
+.main-dog-alarm-top-contain, .main-dog-alarm-bottom-contain {
+    display: flex;
+    padding: 24px 0;
+}
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    margin: auto;
+}
+
+/* 병원 알림 팝업 시작*/
+.main-dog-alarm-popup {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    background-color: #eee;
+    text-align: center;
+    padding: 40px;
+    box-shadow: -5px 5px 10px rgba(0,0,0,.1);
+    display: none;
+}
+.main-dog-alarm-popup h2 {
+    font-size: 3.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+.main-dog-alarm-popup-text {
+    padding: 0;
+    color: #666;
+    font-size: .9rem;
+}
+.main-dog-alarm-popup-text span {
+    color: #000;
+    font-weight: 900;
+}
+.main-dog-alarm-popup-close-btn {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    font-size: 28px;
+    color: rgba(0,0,0,.2);
+}
+/* 병원 알림 팝업 끝*/
+.main-dog-alarm-more-btn {
+    top: 15px;
+    right: 20px;
+}
+.main-dog-alarm-more-btn:hover {
+    box-shadow: unset;
+}
+/* 병원 알림 끝 */
+
+/* 유기동물영역 시작 */
+.main-content-right {
+    width: 45%;
+    height: 100%;
+    padding: 20px;
+}
+.main-abandonedDog-title {
+    width: 100%;
+    height: 16.5vh;
+    background-color: #ccc;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.main-abandonedDog-title h2 {
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+
+
+
+.main-abandonedDog-title p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.main-abandonedDog-conts-contain {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1vh;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.main-abandonedDog-conts {
+    width: 32%;
+    min-height: 22vh;
+    font-weight: 900;
+    color: #777;
+    border: 3px solid #5eb73f;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.main-abandonedDog-conts-contain .main-abandonedDog-conts:nth-child(2n) {
+    border : 3px solid #ff9110;
+}
+.main-abandonedDog-conts-contain .main-abandonedDog-conts:nth-child(3n) {
+    border : 3px solid #c54a4a;
+}
+.main-abandonedDog-conts>ul {
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, .6);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* padding: 12px; */
+    font-weight: normal;
+    text-align: left;
+    margin: 0;
+    transition: .5s;
+}
+.main-abandonedDog-conts:hover ul{
+    height: 70%;
+    padding: 12px;
+}
+.main-abandonedDog-conts>ul>li {
+    margin-bottom: 2%;
+}
+.main-abandonedDog-conts-class {
+    width: 80px;
+    height: 50px;
+    background-color: #5eb73f;
+    color: #fff;
+    transform: rotate(-45deg);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    top: -15px;
+    left: -30px;
+    font-size: .9rem;
+    padding: 2%;
+    box-sizing: border-box;
+}
+.main-abandonedDog-conts:nth-child(2n) .main-abandonedDog-conts-class {
+    background-color: #ff9110;
+}
+.main-abandonedDog-conts:nth-child(3n) .main-abandonedDog-conts-class {
+    background-color: #c54a4a;
+}
